@@ -4,7 +4,7 @@
 	<parent>
 		<artifactId>parent</artifactId>
 		<groupId>com.devsprint.jersey.api</groupId>
-		<version>0.0.2</version>
+		<version>0.0.3-SNAPSHOT</version>
 	</parent>
 	<artifactId>netty-jersey-test-container</artifactId>
 	<name>netty-jersey-test-container</name>
@@ -21,7 +21,7 @@
 		<dependency>
 			<groupId>com.devsprint.jersey.api</groupId>
 			<artifactId>netty-jersey-container</artifactId>
-			<version>0.0.2</version>
+			<version>0.0.3-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>
