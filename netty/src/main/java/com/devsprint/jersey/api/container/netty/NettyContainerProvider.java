@@ -26,7 +26,7 @@ import com.sun.jersey.spi.container.WebApplication;
  * @author gciuloaica
  * 
  */
-class NettyContainerProvider implements ContainerProvider<JerseyHandler> {
+public class NettyContainerProvider implements ContainerProvider<JerseyHandler> {
 
 	public JerseyHandler createContainer(final Class<JerseyHandler> type,
 			final ResourceConfig resourceConfig,

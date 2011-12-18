@@ -6,7 +6,7 @@
 		<groupId>com.devsprint.jersey.api</groupId>
 		<version>0.0.3-SNAPSHOT</version>
 	</parent>
-	<artifactId>netty-jersey-test-container</artifactId>
+	<artifactId>jersey-netty-test-container</artifactId>
 	<name>netty-jersey-test-container</name>
 	<description>Netty based test container.</description>
 	<properties>
@@ -20,7 +20,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.devsprint.jersey.api</groupId>
-			<artifactId>netty-jersey-container</artifactId>
+			<artifactId>jersey-netty-container</artifactId>
 			<version>0.0.3-SNAPSHOT</version>
 		</dependency>
 	</dependencies>

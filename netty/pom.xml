@@ -6,7 +6,7 @@
 		<groupId>com.devsprint.jersey.api</groupId>
 		<version>0.0.3-SNAPSHOT</version>
 	</parent>
-	<artifactId>netty-jersey-container</artifactId>
+	<artifactId>jersey-netty-container</artifactId>
 	<name>netty-jersey-container</name>
 	<description>Netty based http/https container.</description>
 	<properties>
