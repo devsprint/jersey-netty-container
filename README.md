@@ -11,7 +11,7 @@ Dependencies:
 -------------
 
 
-   com.devsprint.jersey.api:jersey-netty-test-container:jar:0.0.4
+*  com.devsprint.jersey.api:jersey-netty-test-container:jar:0.0.4
 
     com.sun.jersey.jersey-test-framework:jersey-test-framework-http:jar:1.11:compile
 
@@ -25,7 +25,8 @@ Dependencies:
 
           com.sun.jersey:jersey-client:jar:1.11:compile
 
-      com.devsprint.jersey.api:jersey-netty-container:jar:0.0.4
+
+* com.devsprint.jersey.api:jersey-netty-container:jar:0.0.4
 
        com.sun.jersey:jersey-server:jar:1.11:compile
 
