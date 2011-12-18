@@ -21,9 +21,9 @@
 		<name>DevSprint</name>
 	</organization>
 	<scm>
-		<connection>scm:git:git@github.com:devsprint/library.git</connection>
-		<url>https://devsprint@github.com/devsprint/library.git</url>
-		<developerConnection>scm:git:ssh://git@github.com/devsprint/library.git</developerConnection>
+		<connection>scm:git:git@github.com:devsprint/jersey-netty-container.git</connection>
+		<url>https://devsprint@github.com/devsprint/jersey-netty-container.git</url>
+		<developerConnection>scm:git:ssh://git@github.com/devsprint/jersey-netty-container.git</developerConnection>
 	</scm>
 	<distributionManagement>
 		<repository>
