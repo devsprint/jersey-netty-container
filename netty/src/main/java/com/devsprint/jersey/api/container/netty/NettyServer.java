@@ -35,7 +35,7 @@ import org.slf4j.LoggerFactory;
  * 
  */
 public final class NettyServer {
-	public static final String PROPERTY_BASE_URI = "com.devsprint.learning.async_server.baseUri";
+	public static final String PROPERTY_BASE_URI = "com.devsprint.jersey.api.container.netty.baseUri";
 
 	private static final Logger LOG = LoggerFactory
 			.getLogger(NettyServer.class);

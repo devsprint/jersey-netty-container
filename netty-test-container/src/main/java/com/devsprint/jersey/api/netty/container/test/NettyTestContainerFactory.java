@@ -17,6 +17,9 @@ package com.devsprint.jersey.api.netty.container.test;
 
 import java.net.URI;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.sun.jersey.test.framework.AppDescriptor;
 import com.sun.jersey.test.framework.LowLevelAppDescriptor;
 import com.sun.jersey.test.framework.spi.container.TestContainer;
@@ -29,6 +32,8 @@ import com.sun.jersey.test.framework.spi.container.TestContainerFactory;
  * 
  */
 public class NettyTestContainerFactory implements TestContainerFactory {
+	private static final Logger LOGGER = LoggerFactory
+			.getLogger(NettyTestContainerFactory.class.getName());
 
 	/**
 	 * @see com.sun.jersey.test.framework.spi.container.TestContainerFactory#supports()
@@ -46,6 +51,7 @@ public class NettyTestContainerFactory implements TestContainerFactory {
 	 */
 	public TestContainer create(final URI baseUri,
 			final AppDescriptor appDescriptor) throws IllegalArgumentException {
+		LOGGER.debug("Base uri for testing is: {}", baseUri);
 		if (!(appDescriptor instanceof LowLevelAppDescriptor)) {
 			throw new IllegalArgumentException(
 					"The application descriptor must be an instance of LowLevelAppDescriptor");

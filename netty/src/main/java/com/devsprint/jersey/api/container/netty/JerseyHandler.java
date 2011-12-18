@@ -21,10 +21,13 @@ import java.net.URISyntaxException;
 
 import org.jboss.netty.buffer.ChannelBufferInputStream;
 import org.jboss.netty.channel.ChannelHandlerContext;
+import org.jboss.netty.channel.ExceptionEvent;
 import org.jboss.netty.channel.MessageEvent;
 import org.jboss.netty.channel.SimpleChannelUpstreamHandler;
 import org.jboss.netty.handler.codec.http.HttpHeaders;
 import org.jboss.netty.handler.codec.http.HttpRequest;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.sun.jersey.api.core.ResourceConfig;
 import com.sun.jersey.core.header.InBoundHeaders;
@@ -38,6 +41,8 @@ import com.sun.jersey.spi.container.WebApplication;
  * 
  */
 class JerseyHandler extends SimpleChannelUpstreamHandler {
+	private static final Logger LOGGER = LoggerFactory
+			.getLogger(JerseyHandler.class);
 
 	private final transient WebApplication application;
 	private final transient String baseUri;
@@ -70,6 +75,13 @@ class JerseyHandler extends SimpleChannelUpstreamHandler {
 				messageEvent.getChannel()));
 	}
 
+	@Override
+	public void exceptionCaught(ChannelHandlerContext ctx, ExceptionEvent e) {
+		// Close the connection when an exception is raised.
+		LOGGER.warn("Unexpected exception from downstream.", e.getCause());
+		e.getChannel().close();
+	}
+
 	private InBoundHeaders getHeaders(final HttpRequest request) {
 		final InBoundHeaders headers = new InBoundHeaders();
 
@@ -82,7 +94,7 @@ class JerseyHandler extends SimpleChannelUpstreamHandler {
 
 	private String getBaseUri(final HttpRequest request) {
 		String baseUri = this.baseUri;
-		if (baseUri != null) {
+		if (baseUri == null) {
 			baseUri = "http://" + request.getHeader(HttpHeaders.Names.HOST)
 					+ "/";
 		}
