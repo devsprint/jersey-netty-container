@@ -52,6 +52,14 @@ Example project:
 
 https://github.com/devsprint/async_addressbook
 
+Server configuration:
+
+https://github.com/devsprint/async_addressbook/blob/master/src/main/java/com/devsprint/learning/agenda_service/AsyncRestServer.java
+
+Test Configuration:
+
+https://github.com/devsprint/async_addressbook/blob/master/src/test/java/com/devsprint/learning/agenda_service/Scenario.java
+
 
 License
 ---------------------
