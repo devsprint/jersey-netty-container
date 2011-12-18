@@ -6,8 +6,8 @@
 		<groupId>com.devsprint.jersey.api</groupId>
 		<version>0.0.2-SNAPSHOT</version>
 	</parent>
-	<artifactId>netty</artifactId>
-	<name>netty</name>
+	<artifactId>netty-jersey-container</artifactId>
+	<name>netty-jersey-container</name>
 	<description>Netty based http/https container.</description>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

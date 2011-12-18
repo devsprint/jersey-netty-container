@@ -85,8 +85,11 @@
 	</repositories>
 
 	<modules>
-		<module>netty</module>
-		<module>netty-test-container</module>
+
+
+
+	<module>netty</module>
+	<module>netty-test-container</module>
 	</modules>
 	<dependencies>
 		<dependency>
