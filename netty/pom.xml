@@ -4,7 +4,7 @@
 	<parent>
 		<artifactId>parent</artifactId>
 		<groupId>com.devsprint.jersey.api</groupId>
-		<version>0.0.5</version>
+		<version>0.0.6-SNAPSHOT</version>
 	</parent>
 	<artifactId>jersey-netty-container</artifactId>
 	<name>netty-jersey-container</name>
