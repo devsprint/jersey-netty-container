@@ -12,6 +12,11 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<scm.branch>master</scm.branch>
+		<!--Trick to deploy releases (using mvn release:perform) to the local file 
+			system. The release is actually performed from target/checkout, which is 
+			why we need those ../../ . Notice that after deployment, one must commit 
+			and push to the git repository. -->
+		<altDeploymentRepository>repo::default::file:../../../../devsprint.github.com/releases</altDeploymentRepository>
 	</properties>
 
 	<description>A Jersey sever container implementation using Netty.</description>
@@ -27,7 +32,7 @@
 	<distributionManagement>
 		<repository>
 			<id>repo</id>
-			<url>${local.public.mvn.repo}</url>
+			<url>https://github.com/devsprint/devsprint.github.com/raw/master/releases</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots-repo</id>
