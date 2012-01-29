@@ -38,12 +38,12 @@ How to use it?
 		<dependency>
 			<groupId>com.devsprint.jersey.api</groupId>
 			<artifactId>jersey-netty-container</artifactId>
-			<version>0.0.5</version>
+			<version>0.0.6</version>
 		</dependency>
 		<dependency>
 			<groupId>com.devsprint.jersey.api</groupId>
 			<artifactId>jersey-netty-test-container</artifactId>
-			<version>0.0.5</version>
+			<version>0.0.6</version>
 			<scope>test</scope>
 		</dependency>
 
