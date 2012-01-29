@@ -11,13 +11,13 @@ Dependencies:
 -------------
 
 
-*  Netty 3.2.7.Final
+*  Netty 3.3.0.Final
 
-*  Jersey 2.11
+*  Jersey 1.11
 
-*  SLF4J 1.6.1
+*  SLF4J 1.6.4
 
-*  Logback 0.9.28 
+*  Logback 1.0.0 
 
 
 How to use it?
@@ -38,12 +38,12 @@ How to use it?
 		<dependency>
 			<groupId>com.devsprint.jersey.api</groupId>
 			<artifactId>jersey-netty-container</artifactId>
-			<version>0.0.4</version>
+			<version>0.0.5</version>
 		</dependency>
 		<dependency>
 			<groupId>com.devsprint.jersey.api</groupId>
 			<artifactId>jersey-netty-test-container</artifactId>
-			<version>0.0.4</version>
+			<version>0.0.5</version>
 			<scope>test</scope>
 		</dependency>
 
