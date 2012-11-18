@@ -1,7 +1,7 @@
 Jersey-Netty-Container
 ======================
 
-Jersey Container implemenation based on Netty.
+Jersey Container implemenation based on Netty. This is not intended for production usage. It was build to get familiar with the SPI of Jersey.
 
 NOTE: all versions before 0.0.4 are broken.
 -------------------------------------------
