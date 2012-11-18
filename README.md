@@ -50,15 +50,15 @@ How to use it?
 Example project:
 ----------------
 
-https://github.com/devsprint/async_addressbook
+https://github.com/devsprint/addressbook
 
 Server configuration:
 
-https://github.com/devsprint/async_addressbook/blob/master/src/main/java/com/devsprint/learning/agenda_service/AsyncRestServer.java
+https://github.com/devsprint/addressbook/blob/master/src/main/java/com/devsprint/learning/agenda_service/AsyncRestServer.java
 
 Test Configuration:
 
-https://github.com/devsprint/async_addressbook/blob/master/src/test/java/com/devsprint/learning/agenda_service/Scenario.java
+https://github.com/devsprint/addressbook/blob/master/src/test/java/com/devsprint/learning/agenda_service/Scenario.java
 
 
 License
